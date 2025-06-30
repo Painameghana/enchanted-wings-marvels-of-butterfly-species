@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Butterfly Classifier - Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin:0; font-family: 'Montserrat', Arial, sans-serif; background: #fafafa; }
+        .navbar {
+            width: 100%; background: #fff; box-shadow: 0 2px 8px #0001;
+            display: flex; justify-content: flex-end; align-items: center;
+            padding: 1.2rem 3rem; position: sticky; top: 0; z-index: 10;
+        }
+        .navbar a {
+            color: #444; text-decoration: none; font-weight: 600;
+            margin-left: 2rem; font-size: 1.1rem; transition: color 0.2s;
+        }
+        .navbar a:hover { color: #e17055; }
+        .hero {
+            width: 100vw; height: 260px;
+            background: url('/static/pred.jpg') center/cover no-repeat;
+            display: flex; align-items: center; justify-content: center;
+            position: relative;
+        }
+        .hero-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.35);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+        }
+        .hero-title {
+            color: #fff; font-size: 2.2rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem;
+            text-shadow: 0 2px 8px #0007;
+        }
+        .hero-breadcrumb {
+            color: #fff; font-size: 1.1rem; text-align: center; opacity: 0.9;
+        }
+        .main-section {
+            width: 100vw; display: flex; flex-direction: column; align-items: center;
+            margin-top: 2.5rem; margin-bottom: 2.5rem;
+        }
+        .upload-title {
+            font-size: 2rem; color: #2d3436; margin-bottom: 1.5rem; font-weight: 600;
+        }
+        .card-grid {
+            display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .upload-card {
+            background: #fff; border-radius: 1.2rem; box-shadow: 0 2px 12px #0001;
+            width: 220px; min-height: 260px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 1.2rem 1rem; position: relative;
+        }
+        .upload-card input[type="file"] {
+            display: none;
+        }
+        .upload-card label {
+            background: linear-gradient(90deg,#00b894,#fd79a8);
+            color: #fff; border-radius: 30px; padding: 0.5rem 1.3rem;
+            font-size: 1rem; font-weight: 600; cursor: pointer; margin-bottom: 0.7rem;
+            transition: background 0.2s, color 0.2s;
+        }
+        .upload-card label:hover { background: linear-gradient(90deg,#fdcb6e,#00b894); color: #222; }
+        .upload-card .preview-img {
+            width: 120px; height: 120px; object-fit: cover; border-radius: 0.7rem;
+            margin-bottom: 0.6rem; background: #f1f2f6;
+            display: none;
+        }
+        .upload-card .file-name {
+            font-size: 0.95rem; color: #636e72; margin-bottom: 0.4rem; text-align: center;
+        }
+        .remove-btn {
+            background: #fd7979; color: #fff; border: none; border-radius: 20px;
+            padding: 0.2rem 0.9rem; font-size: 0.9rem; cursor: pointer;
+            position: absolute; top: 10px; right: 10px;
+            transition: background 0.2s;
+        }
+        .remove-btn:hover { background: #d63031; }
+        .add-card-btn {
+            background: #00b894; color: #fff; border-radius: 1.2rem;
+            border: none; font-size: 2rem; width: 220px; height: 260px;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer; box-shadow: 0 2px 12px #0001; margin-bottom: 1rem;
+            transition: background 0.2s;
+        }
+        .add-card-btn:hover { background: #fdcb6e; color: #222; }
+        .predict-btn {
+            padding: 0.7rem 2.2rem; border-radius: 30px; border: none;
+            background: linear-gradient(90deg,#00b894,#fd79a8);
+            color: #fff; font-weight: 700; font-size: 1.1rem; cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .predict-btn:hover {
+            background: linear-gradient(90deg,#fdcb6e,#00b894); color: #222;
+        }
+        .newsletter-section {
+            background: #f6f6f6; width: 100vw; padding: 2.5rem 0; text-align: center; margin-top: 3rem;
+        }
+        .newsletter-title {
+            font-size: 1.3rem; color: #2d3436; font-weight: 600; margin-bottom: 0.5rem;
+        }
+        .newsletter-desc {
+            color: #636e72; margin-bottom: 1rem;
+        }
+        .newsletter-form {
+            display: flex; justify-content: center; align-items: center; gap: 0.5rem;
+        }
+        .newsletter-form input[type="email"] {
+            padding: 0.7rem 1.2rem; border-radius: 30px; border: 1px solid #b2bec3;
+            font-size: 1.05rem; width: 320px; max-width: 80vw;
+        }
+        .newsletter-form button {
+            padding: 0.7rem 1.7rem; border-radius: 30px; border: none;
+            background: #145a32; color: #fff; font-weight: 600; font-size: 1.1rem; cursor: pointer;
+            transition: background 0.2s;
+        }
+        .newsletter-form button:hover { background: #00b894; }
+        @media (max-width: 900px) {
+            .card-grid { gap: 1rem; }
+            .upload-card, .add-card-btn { width: 160px; height: 180px; }
+        }
+        @media (max-width: 700px) {
+            .hero { height: 120px; }
+            .hero-title { font-size: 1.1rem; }
+            .upload-title { font-size: 1.1rem; }
+            .newsletter-title { font-size: 1rem; }
+            .newsletter-form input[type="email"] { width: 160px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="{{ url_for('input_page') }}">Get Started</a>
+    </div>
+    <div class="hero">
+        <div class="hero-overlay">
+            <div class="hero-title">Prediction</div>
+            <div class="hero-breadcrumb">Home / Prediction</div>
+        </div>
+    </div>
+    <div class="main-section">
+        <div class="upload-title">Upload images of butterflies</div>
+        <form id="multi-upload-form" class="upload-form" method="POST" action="{{ url_for('predict') }}" enctype="multipart/form-data">
+            <div class="card-grid" id="cardGrid">
+                <!-- Cards are dynamically rendered here -->
+            </div>
+            <button type="submit" class="predict-btn">Predict</button>
+        </form>
+    </div>
+    <div class="newsletter-section">
+        <div class="newsletter-title">SUBSCRIBE TO OUR NEWSLETTER</div>
+        <div class="newsletter-desc">Stay updated with the latest butterfly discoveries and AI news!</div>
+        <form class="newsletter-form" method="POST" action="#">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <script>
+        // Multi-card upload logic
+        let cardCount = 1;
+        const cardGrid = document.getElementById('cardGrid');
+        function createCard(idx) {
+            const card = document.createElement('div');
+            card.className = 'upload-card';
+            card.innerHTML = `
+                <label for="file${idx}">Choose Image
+                    <input type="file" name="file${idx}" id="file${idx}" accept="image/*" required>
+                </label>
+                <img class="preview-img" id="preview${idx}">
+                <div class="file-name" id="filename${idx}"></div>
+                <button type="button" class="remove-btn" onclick="removeCard(${idx})" style="display:none;">×</button>
+            `;
+            // File preview logic
+            card.querySelector(`#file${idx}`).addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(ev) {
+                        card.querySelector('.preview-img').src = ev.target.result;
+                        card.querySelector('.preview-img').style.display = 'block';
+                        card.querySelector('.file-name').textContent = file.name;
+                        card.querySelector('.remove-btn').style.display = '';
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+            return card;
+        }
+
+        function addCard() {
+            cardCount++;
+            cardGrid.appendChild(createCard(cardCount));
+        }
+
+        function removeCard(idx) {
+            const card = document.getElementById(`file${idx}`).closest('.upload-card');
+            card.remove();
+        }
+
+        // Initial card + add button
+        cardGrid.appendChild(createCard(1));
+        const addBtn = document.createElement('button');
+        addBtn.type = 'button';
+        addBtn.className = 'add-card-btn';
+        addBtn.innerHTML = '+';
+        addBtn.onclick = addCard;
+        cardGrid.appendChild(addBtn);
+    </script>
+</body>
+</html>

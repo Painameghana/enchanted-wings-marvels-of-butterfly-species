@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enchanted Wings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: #fafafa;
+            overflow-x: hidden;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        .navbar {
+            width: 100vw;
+            background: #fff;
+            box-shadow: 0 2px 8px #0001;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        .site-logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #00b894;
+            letter-spacing: 1.5px;
+            font-family: 'Montserrat', Arial, sans-serif;
+            user-select: none;
+        }
+        .butterfly-icon {
+            font-size: 1.6rem;
+            margin-right: 0.5rem;
+            margin-top: -2px;
+        }
+        .site-title {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #00b894;
+            letter-spacing: 1.5px;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .nav-links a {
+            color: #444;
+            text-decoration: none;
+            font-weight: 600;
+            margin-left: 1.2rem;
+            font-size: 1.1rem;
+            transition: color 0.2s, background 0.2s;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+        }
+        .nav-links a:hover,
+        .nav-links .get-started {
+            color: #fff;
+            background: #00b894;
+        }
+        .carousel {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: #222;
+            margin: 0;
+        }
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            transition: opacity 0.7s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .slide.active { opacity: 1; z-index: 1; }
+        .slide-content {
+            color: #fff;
+            text-align: center;
+            width: 100vw;
+            text-shadow: 0 4px 24px #000, 0 1px 2px #444;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+        .slide-content h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            margin-bottom: 0.7rem;
+            line-height: 1.1;
+            pointer-events: auto;
+        }
+        .slide-content p {
+            font-size: 1.1rem;
+            margin-bottom: 0.7rem;
+            max-width: 700px;
+            pointer-events: auto;
+        }
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.5rem;
+            color: #fff;
+            background: rgba(0,0,0,0.2);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 3;
+            transition: background 0.2s;
+        }
+        .carousel-arrow.left { left: 15px; }
+        .carousel-arrow.right { right: 15px; }
+        .carousel-arrow:hover { background: #fd79a8; }
+        .carousel-dots {
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+            z-index: 4;
+        }
+        .carousel-dot {
+            width: 18px;
+            height: 5px;
+            border-radius: 3px;
+            background: #fff8;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .carousel-dot.active { background: #fd79a8; }
+        @media (max-width: 900px) {
+            .carousel, .slide { height: 100vh; }
+            .slide-content h1 { font-size: 1.3rem; }
+            .navbar { padding: 1rem 0.5rem; }
+            .nav-links a { margin-left: 0.5rem; font-size: 1rem; padding: 0.3rem 0.7rem; }
+            .site-logo { font-size: 1rem; }
+            .butterfly-icon { font-size: 1.2rem; }
+        }
+        @media (max-width: 600px) {
+            .slide-content h1 { font-size: 1rem; }
+            .carousel, .slide { height: 100vh; }
+            .site-logo { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="site-logo">
+            <span class="butterfly-icon">🦋</span>
+            <span class="site-title">Enchanted Wings</span>
+        </div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a class="get-started" href="{{ url_for('input_page') }}">Get Started</a>
+        </div>
+    </div>
+    <div class="carousel" id="carousel">
+        <div class="slide active" style="background-image:url('/static/bg.jpg')">
+            <div class="slide-content">
+                <h1>Just when the caterpillar thought the world was over, it became a butterfly.</h1>
+                <p>They can't see how truly beautiful they are, but everyone else can. People are like that as well.</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image:url('/static/bg2.jpg')">
+            <div class="slide-content">
+                <h1>Love is like a butterfly: It goes where it pleases and it pleases wherever it goes.</h1>
+                <p>They can't see how truly beautiful they are, but everyone else can. People are like that as well.</p>
+            </div>
+        </div>
+        <button class="carousel-arrow left" onclick="prevSlide()">&#10094;</button>
+        <button class="carousel-arrow right" onclick="nextSlide()">&#10095;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" onclick="goToSlide(0)"></button>
+            <button class="carousel-dot" onclick="goToSlide(1)"></button>
+        </div>
+    </div>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        let current = 0;
+        function showSlide(idx) {
+            slides.forEach((s,i) => s.classList.toggle('active', i===idx));
+            dots.forEach((d,i) => d.classList.toggle('active', i===idx));
+            current = idx;
+        }
+        function prevSlide() { showSlide((current-1+slides.length)%slides.length); }
+        function nextSlide() { showSlide((current+1)%slides.length); }
+        function goToSlide(idx) { showSlide(idx); }
+        setInterval(() => showSlide((current+1)%slides.length), 8000);
+    </script>
+</body>
+</html>
