@@ -1,0 +1,204 @@
+{
+  "build": "py310h827c3e9_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0",
+    "vc >=14.2,<15.0a0",
+    "vs2015_runtime >=14.29.30133,<15.0a0",
+    "typing-extensions >=4.1.0"
+  ],
+  "extracted_package_dir": "C:\\Users\\paina\\anaconda3\\pkgs\\multidict-6.1.0-py310h827c3e9_0",
+  "files": [
+    "Lib/site-packages/multidict-6.1.0.dist-info/INSTALLER",
+    "Lib/site-packages/multidict-6.1.0.dist-info/LICENSE",
+    "Lib/site-packages/multidict-6.1.0.dist-info/METADATA",
+    "Lib/site-packages/multidict-6.1.0.dist-info/RECORD",
+    "Lib/site-packages/multidict-6.1.0.dist-info/REQUESTED",
+    "Lib/site-packages/multidict-6.1.0.dist-info/WHEEL",
+    "Lib/site-packages/multidict-6.1.0.dist-info/direct_url.json",
+    "Lib/site-packages/multidict-6.1.0.dist-info/top_level.txt",
+    "Lib/site-packages/multidict/__init__.py",
+    "Lib/site-packages/multidict/__init__.pyi",
+    "Lib/site-packages/multidict/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/multidict/__pycache__/_abc.cpython-310.pyc",
+    "Lib/site-packages/multidict/__pycache__/_compat.cpython-310.pyc",
+    "Lib/site-packages/multidict/__pycache__/_multidict_base.cpython-310.pyc",
+    "Lib/site-packages/multidict/__pycache__/_multidict_py.cpython-310.pyc",
+    "Lib/site-packages/multidict/_abc.py",
+    "Lib/site-packages/multidict/_compat.py",
+    "Lib/site-packages/multidict/_multidict.cp310-win_amd64.pyd",
+    "Lib/site-packages/multidict/_multidict_base.py",
+    "Lib/site-packages/multidict/_multidict_py.py",
+    "Lib/site-packages/multidict/py.typed"
+  ],
+  "fn": "multidict-6.1.0-py310h827c3e9_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "C:\\Users\\paina\\anaconda3\\pkgs\\multidict-6.1.0-py310h827c3e9_0",
+    "type": 1
+  },
+  "md5": "6e30c94324590d12fb5599056a1bc8c7",
+  "name": "multidict",
+  "package_tarball_full_path": "C:\\Users\\paina\\anaconda3\\pkgs\\multidict-6.1.0-py310h827c3e9_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "93d11a968e2f0f36373c40811ff6d20e173f58c3cab5884cd6617bbfd795492a",
+        "sha256_in_prefix": "93d11a968e2f0f36373c40811ff6d20e173f58c3cab5884cd6617bbfd795492a",
+        "size_in_bytes": 611
+      },
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c7b63681621c70936c8e7324e4f83a6058abe97d1c8afb32715dd396d78a0312",
+        "sha256_in_prefix": "c7b63681621c70936c8e7324e4f83a6058abe97d1c8afb32715dd396d78a0312",
+        "size_in_bytes": 5117
+      },
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "ba6772bb57abfe153d432d44fb051cb0e98749b3501a04172cabf61c8e6f0ef6",
+        "sha256_in_prefix": "ba6772bb57abfe153d432d44fb051cb0e98749b3501a04172cabf61c8e6f0ef6",
+        "size_in_bytes": 1589
+      },
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "d198ef3a5024461885cf42049b9910ac2f436fdcc608bcf239c80b974929cf15",
+        "sha256_in_prefix": "d198ef3a5024461885cf42049b9910ac2f436fdcc608bcf239c80b974929cf15",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "74ddeafa563b026c8b18bb14990f62a3e96a1122c837a707532bf1a4c0f94a49",
+        "sha256_in_prefix": "74ddeafa563b026c8b18bb14990f62a3e96a1122c837a707532bf1a4c0f94a49",
+        "size_in_bytes": 89
+      },
+      {
+        "_path": "Lib/site-packages/multidict-6.1.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f9eb83125924e7faa499f209ed68aa09a6f4d999521595b29de8ca839f6a6504",
+        "sha256_in_prefix": "f9eb83125924e7faa499f209ed68aa09a6f4d999521595b29de8ca839f6a6504",
+        "size_in_bytes": 10
+      },
+      {
+        "_path": "Lib/site-packages/multidict/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a7ad008395150024a58b5b716b34a2f397e80a61cdf9c837a990c2b9674e2a78",
+        "sha256_in_prefix": "a7ad008395150024a58b5b716b34a2f397e80a61cdf9c837a990c2b9674e2a78",
+        "size_in_bytes": 928
+      },
+      {
+        "_path": "Lib/site-packages/multidict/__init__.pyi",
+        "path_type": "hardlink",
+        "sha256": "49b802d9ec3536f3575a544ab3da342a15b89a8a3380caa0434380e117b92504",
+        "sha256_in_prefix": "49b802d9ec3536f3575a544ab3da342a15b89a8a3380caa0434380e117b92504",
+        "size_in_bytes": 4840
+      },
+      {
+        "_path": "Lib/site-packages/multidict/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "3200b78c425d5ffd0f245f88ad85e0a28c80f0ed3436c3683ab65188edf3a277",
+        "sha256_in_prefix": "3200b78c425d5ffd0f245f88ad85e0a28c80f0ed3436c3683ab65188edf3a277",
+        "size_in_bytes": 815
+      },
+      {
+        "_path": "Lib/site-packages/multidict/__pycache__/_abc.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "78be3077c689b554d218476a7cbac0509df1c29214fc34896175ebf079b77fd5",
+        "sha256_in_prefix": "78be3077c689b554d218476a7cbac0509df1c29214fc34896175ebf079b77fd5",
+        "size_in_bytes": 1893
+      },
+      {
+        "_path": "Lib/site-packages/multidict/__pycache__/_compat.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "715b73753f463c4175564d678e795cf6f3a32ebf779ae8997c78d90967a5631a",
+        "sha256_in_prefix": "715b73753f463c4175564d678e795cf6f3a32ebf779ae8997c78d90967a5631a",
+        "size_in_bytes": 424
+      },
+      {
+        "_path": "Lib/site-packages/multidict/__pycache__/_multidict_base.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "8523297a287614e0d69bb48c60994f048776bb4c4cd354cdf75fb30be303e2bc",
+        "sha256_in_prefix": "8523297a287614e0d69bb48c60994f048776bb4c4cd354cdf75fb30be303e2bc",
+        "size_in_bytes": 3361
+      },
+      {
+        "_path": "Lib/site-packages/multidict/__pycache__/_multidict_py.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "ae84838f31fd8f1a35902b5401e6fcb35123f5a04ebe73d77c6cb1c8c2adb4fd",
+        "sha256_in_prefix": "ae84838f31fd8f1a35902b5401e6fcb35123f5a04ebe73d77c6cb1c8c2adb4fd",
+        "size_in_bytes": 16332
+      },
+      {
+        "_path": "Lib/site-packages/multidict/_abc.py",
+        "path_type": "hardlink",
+        "sha256": "66f9eb9f848192bbf84130fbf99cea35ca31c347fc292b4b30fcc6bc1b864f6c",
+        "sha256_in_prefix": "66f9eb9f848192bbf84130fbf99cea35ca31c347fc292b4b30fcc6bc1b864f6c",
+        "size_in_bytes": 1190
+      },
+      {
+        "_path": "Lib/site-packages/multidict/_compat.py",
+        "path_type": "hardlink",
+        "sha256": "b82354a551c94853a229426645ccf7483a8ca646f7ec2fdcb1cdbd8a3afc12fa",
+        "sha256_in_prefix": "b82354a551c94853a229426645ccf7483a8ca646f7ec2fdcb1cdbd8a3afc12fa",
+        "size_in_bytes": 352
+      },
+      {
+        "_path": "Lib/site-packages/multidict/_multidict.cp310-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "ed2da9c70d0097b3437b29b027320e341102b817ce584b49492b73eead3e822c",
+        "sha256_in_prefix": "ed2da9c70d0097b3437b29b027320e341102b817ce584b49492b73eead3e822c",
+        "size_in_bytes": 58640
+      },
+      {
+        "_path": "Lib/site-packages/multidict/_multidict_base.py",
+        "path_type": "hardlink",
+        "sha256": "66776d9d9e68735b0e0ca997b2fe85f645af54d09d6bdc4010415791a3e81680",
+        "sha256_in_prefix": "66776d9d9e68735b0e0ca997b2fe85f645af54d09d6bdc4010415791a3e81680",
+        "size_in_bytes": 3979
+      },
+      {
+        "_path": "Lib/site-packages/multidict/_multidict_py.py",
+        "path_type": "hardlink",
+        "sha256": "e7b878b18ad122eec48cc5f86291d521956b57dfaad4a096dc5eab6a8d740f75",
+        "sha256_in_prefix": "e7b878b18ad122eec48cc5f86291d521956b57dfaad4a096dc5eab6a8d740f75",
+        "size_in_bytes": 15050
+      },
+      {
+        "_path": "Lib/site-packages/multidict/py.typed",
+        "path_type": "hardlink",
+        "sha256": "7bd6e66c7dd4171b1a6d0ae73453c6f6ac485f3b706dc33a20a0d89ef670a6b6",
+        "sha256_in_prefix": "7bd6e66c7dd4171b1a6d0ae73453c6f6ac485f3b706dc33a20a0d89ef670a6b6",
+        "size_in_bytes": 15
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "a64226e9a9f58e00d5ed9ba55a936586be2ee9b049db5f58e101467d71c1e788",
+  "size": 61080,
+  "subdir": "win-64",
+  "timestamp": 1730905592000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/multidict-6.1.0-py310h827c3e9_0.conda",
+  "version": "6.1.0"
+}

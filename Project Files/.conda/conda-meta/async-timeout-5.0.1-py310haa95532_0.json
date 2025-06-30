@@ -1,0 +1,129 @@
+{
+  "build": "py310haa95532_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "python >=3.10,<3.11.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\paina\\anaconda3\\pkgs\\async-timeout-5.0.1-py310haa95532_0",
+  "files": [
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/INSTALLER",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/LICENSE",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/METADATA",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/RECORD",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/REQUESTED",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/WHEEL",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/direct_url.json",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/top_level.txt",
+    "Lib/site-packages/async_timeout-5.0.1.dist-info/zip-safe",
+    "Lib/site-packages/async_timeout/__init__.py",
+    "Lib/site-packages/async_timeout/__pycache__/__init__.cpython-310.pyc",
+    "Lib/site-packages/async_timeout/py.typed"
+  ],
+  "fn": "async-timeout-5.0.1-py310haa95532_0.conda",
+  "license": "Apache-2.0",
+  "link": {
+    "source": "C:\\Users\\paina\\anaconda3\\pkgs\\async-timeout-5.0.1-py310haa95532_0",
+    "type": 1
+  },
+  "md5": "ec577fabb22ec2acf639d6a07a3b36f3",
+  "name": "async-timeout",
+  "package_tarball_full_path": "C:\\Users\\paina\\anaconda3\\pkgs\\async-timeout-5.0.1-py310haa95532_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "e18d7bb8f513e2c46bb585c94b585bd30720dd3ccb21ddb0786f72d16658f92c",
+        "sha256_in_prefix": "e18d7bb8f513e2c46bb585c94b585bd30720dd3ccb21ddb0786f72d16658f92c",
+        "size_in_bytes": 568
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "07cae957134250a20daad8559d301cdaf278b71123985bceff0bedfa4ee5f828",
+        "sha256_in_prefix": "07cae957134250a20daad8559d301cdaf278b71123985bceff0bedfa4ee5f828",
+        "size_in_bytes": 5294
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "2a90107c0bbb9e7330710b654d4255e45d9d4060d07c4df3d4171d89c72a0758",
+        "sha256_in_prefix": "2a90107c0bbb9e7330710b654d4255e45d9d4060d07c4df3d4171d89c72a0758",
+        "size_in_bytes": 1017
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+        "sha256_in_prefix": "195f5a3138703ffe28342b6f102d9e737a9462eb6059e033925ae8ff49b85894",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "210bb658e5d51171a27ae92ee3da2297addcbd69348b4295ab1f0ff80e2a520f",
+        "sha256_in_prefix": "210bb658e5d51171a27ae92ee3da2297addcbd69348b4295ab1f0ff80e2a520f",
+        "size_in_bytes": 93
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f683387bb4f0abc883ffbfd0dcccf413a18f201eaf26f445a3e501c1442d0435",
+        "sha256_in_prefix": "f683387bb4f0abc883ffbfd0dcccf413a18f201eaf26f445a3e501c1442d0435",
+        "size_in_bytes": 14
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout-5.0.1.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "sha256_in_prefix": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "405d33a5f5f5bc69b189bee402a34f9bd61e84f574a01568cf127ef8cc6af5d2",
+        "sha256_in_prefix": "405d33a5f5f5bc69b189bee402a34f9bd61e84f574a01568cf127ef8cc6af5d2",
+        "size_in_bytes": 9186
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout/__pycache__/__init__.cpython-310.pyc",
+        "path_type": "hardlink",
+        "sha256": "1a651d5780522c89e4542644d6060393795e9179802344ac9d5a45021163e681",
+        "sha256_in_prefix": "1a651d5780522c89e4542644d6060393795e9179802344ac9d5a45021163e681",
+        "size_in_bytes": 7582
+      },
+      {
+        "_path": "Lib/site-packages/async_timeout/py.typed",
+        "path_type": "hardlink",
+        "sha256": "b72a33cd14f57f38971130f1a249aecadea384e9ad8d46e754d25d65c1bb8a4d",
+        "sha256_in_prefix": "b72a33cd14f57f38971130f1a249aecadea384e9ad8d46e754d25d65c1bb8a4d",
+        "size_in_bytes": 12
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "112a87be3381e8fda6171c57dbf84a76b7789556787902cc62863c634d696f75",
+  "size": 14357,
+  "subdir": "win-64",
+  "timestamp": 1732663915000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/async-timeout-5.0.1-py310haa95532_0.conda",
+  "version": "5.0.1"
+}

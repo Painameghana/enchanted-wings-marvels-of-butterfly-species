@@ -1,0 +1,284 @@
+{
+  "build": "had4844c_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "m2w64-gcc-libs",
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0",
+    "mpi 1.0 msmpi"
+  ],
+  "extracted_package_dir": "C:\\Users\\paina\\anaconda3\\pkgs\\msmpi-10.1.1-had4844c_0",
+  "files": [
+    "Library/bin/mpiexec.exe",
+    "Library/bin/msmpi.dll",
+    "Library/bin/msmpiLaunchSvc.exe",
+    "Library/bin/smpd.exe",
+    "Library/include/mpi.f90",
+    "Library/include/mpi.h",
+    "Library/include/mpif.h",
+    "Library/include/mpifptr.h",
+    "Library/include/mpio.h",
+    "Library/include/mpiwarning.h",
+    "Library/include/mspms.h",
+    "Library/include/pmidbg.h",
+    "Library/lib/mpi_debugger.lib",
+    "Library/lib/mpiapi.lib",
+    "Library/lib/mpichannels.lib",
+    "Library/lib/mpicommon.lib",
+    "Library/lib/mpid.lib",
+    "Library/lib/mpiexec.lib",
+    "Library/lib/mpifort.lib",
+    "Library/lib/mpiio.lib",
+    "Library/lib/mpistub.lib",
+    "Library/lib/mpiutil.lib",
+    "Library/lib/msmpi.lib",
+    "Library/lib/msmpifec.lib",
+    "Library/lib/msmpifes.lib",
+    "Library/lib/msmpifmc.lib",
+    "Library/lib/msmpifms.lib",
+    "Library/lib/pmicli.lib",
+    "Library/lib/pmilib.lib",
+    "etc/conda/activate.d/msmpi_activate.bat",
+    "etc/conda/deactivate.d/msmpi_deactivate.bat"
+  ],
+  "fn": "msmpi-10.1.1-had4844c_0.conda",
+  "license": "MIT",
+  "link": {
+    "source": "C:\\Users\\paina\\anaconda3\\pkgs\\msmpi-10.1.1-had4844c_0",
+    "type": 1
+  },
+  "md5": "385645fceb5e44c671e86fea025b40cd",
+  "name": "msmpi",
+  "package_tarball_full_path": "C:\\Users\\paina\\anaconda3\\pkgs\\msmpi-10.1.1-had4844c_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/mpiexec.exe",
+        "path_type": "hardlink",
+        "sha256": "12a4d203ade41e4ac966fddeeb59edb247111a87bd8f57037028cd13be78f168",
+        "sha256_in_prefix": "12a4d203ade41e4ac966fddeeb59edb247111a87bd8f57037028cd13be78f168",
+        "size_in_bytes": 892928
+      },
+      {
+        "_path": "Library/bin/msmpi.dll",
+        "path_type": "hardlink",
+        "sha256": "6773a6be308688f3b189673bc632dfec768bb974794ec0b0f1ad7ea088801115",
+        "sha256_in_prefix": "6773a6be308688f3b189673bc632dfec768bb974794ec0b0f1ad7ea088801115",
+        "size_in_bytes": 2260480
+      },
+      {
+        "_path": "Library/bin/msmpiLaunchSvc.exe",
+        "path_type": "hardlink",
+        "sha256": "7c967d6306816bcdaedeaf0c1afd8578ece4e299bfddb998ae3cafd43d74897f",
+        "sha256_in_prefix": "7c967d6306816bcdaedeaf0c1afd8578ece4e299bfddb998ae3cafd43d74897f",
+        "size_in_bytes": 439808
+      },
+      {
+        "_path": "Library/bin/smpd.exe",
+        "path_type": "hardlink",
+        "sha256": "f3cd0ab97efd733cb7ccf993d393cd063ba91f0afbbde3ae657aae4f9ba429b1",
+        "sha256_in_prefix": "f3cd0ab97efd733cb7ccf993d393cd063ba91f0afbbde3ae657aae4f9ba429b1",
+        "size_in_bytes": 722432
+      },
+      {
+        "_path": "Library/include/mpi.f90",
+        "path_type": "hardlink",
+        "sha256": "38e7be31ad555570f6122058317c08504472b8cfd0a198cdad827519b941ba2c",
+        "sha256_in_prefix": "38e7be31ad555570f6122058317c08504472b8cfd0a198cdad827519b941ba2c",
+        "size_in_bytes": 53445
+      },
+      {
+        "_path": "Library/include/mpi.h",
+        "path_type": "hardlink",
+        "sha256": "825ac83276895cdeafddf7a9e6039c8abc7564a214016be8647267950d61b840",
+        "sha256_in_prefix": "825ac83276895cdeafddf7a9e6039c8abc7564a214016be8647267950d61b840",
+        "size_in_bytes": 168515
+      },
+      {
+        "_path": "Library/include/mpif.h",
+        "path_type": "hardlink",
+        "sha256": "f3384eeb848164e518edfd2b2b9ff1d0f33e267efd5811d5a7c5f79ef7a0a81e",
+        "sha256_in_prefix": "f3384eeb848164e518edfd2b2b9ff1d0f33e267efd5811d5a7c5f79ef7a0a81e",
+        "size_in_bytes": 19542
+      },
+      {
+        "_path": "Library/include/mpifptr.h",
+        "path_type": "hardlink",
+        "sha256": "031f910c6ce9a0f7bf66365dd4271fa36530f32c5d22755b10ef2d89dc605e1f",
+        "sha256_in_prefix": "031f910c6ce9a0f7bf66365dd4271fa36530f32c5d22755b10ef2d89dc605e1f",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "Library/include/mpio.h",
+        "path_type": "hardlink",
+        "sha256": "4ad8c92df2fb105ada68feeda3e09a34663e66cdcd2e8f243deac1a5c3ecec9a",
+        "sha256_in_prefix": "4ad8c92df2fb105ada68feeda3e09a34663e66cdcd2e8f243deac1a5c3ecec9a",
+        "size_in_bytes": 138
+      },
+      {
+        "_path": "Library/include/mpiwarning.h",
+        "path_type": "hardlink",
+        "sha256": "863dcb79b49cccf01254354defb270db9815d92cd479c85e7251957ab86b1420",
+        "sha256_in_prefix": "863dcb79b49cccf01254354defb270db9815d92cd479c85e7251957ab86b1420",
+        "size_in_bytes": 500
+      },
+      {
+        "_path": "Library/include/mspms.h",
+        "path_type": "hardlink",
+        "sha256": "e73c5a4ff23b83e3b8377cbec90ac3e7aa37698497127283ccc5d1c2001c43b5",
+        "sha256_in_prefix": "e73c5a4ff23b83e3b8377cbec90ac3e7aa37698497127283ccc5d1c2001c43b5",
+        "size_in_bytes": 5069
+      },
+      {
+        "_path": "Library/include/pmidbg.h",
+        "path_type": "hardlink",
+        "sha256": "62462c6c6818efe8b5fc5e25317d0a58b957e9879324b1b05ad2a9bb594c796e",
+        "sha256_in_prefix": "62462c6c6818efe8b5fc5e25317d0a58b957e9879324b1b05ad2a9bb594c796e",
+        "size_in_bytes": 17357
+      },
+      {
+        "_path": "Library/lib/mpi_debugger.lib",
+        "path_type": "hardlink",
+        "sha256": "4d0495abc76347eb4c4a049bd2c0b3649a66fdefe92ec169c33282ee933efda5",
+        "sha256_in_prefix": "4d0495abc76347eb4c4a049bd2c0b3649a66fdefe92ec169c33282ee933efda5",
+        "size_in_bytes": 796622
+      },
+      {
+        "_path": "Library/lib/mpiapi.lib",
+        "path_type": "hardlink",
+        "sha256": "e69371e1bddac8f9f7507dce496a92d751e42938638c68bac26be657fadad6f7",
+        "sha256_in_prefix": "e69371e1bddac8f9f7507dce496a92d751e42938638c68bac26be657fadad6f7",
+        "size_in_bytes": 4965192
+      },
+      {
+        "_path": "Library/lib/mpichannels.lib",
+        "path_type": "hardlink",
+        "sha256": "560c132358bdcb526fceaa816bb97530e2799443b9a3b7739e13b65d94d8b76d",
+        "sha256_in_prefix": "560c132358bdcb526fceaa816bb97530e2799443b9a3b7739e13b65d94d8b76d",
+        "size_in_bytes": 5518282
+      },
+      {
+        "_path": "Library/lib/mpicommon.lib",
+        "path_type": "hardlink",
+        "sha256": "938831166c95969b5c336de8846d2184cceff95e53761dbda19d23ba1c8387ab",
+        "sha256_in_prefix": "938831166c95969b5c336de8846d2184cceff95e53761dbda19d23ba1c8387ab",
+        "size_in_bytes": 2728832
+      },
+      {
+        "_path": "Library/lib/mpid.lib",
+        "path_type": "hardlink",
+        "sha256": "6427b45c9af2001ea9863c247ade42c173b5e2487f68395feeff6c603ae70687",
+        "sha256_in_prefix": "6427b45c9af2001ea9863c247ade42c173b5e2487f68395feeff6c603ae70687",
+        "size_in_bytes": 6648782
+      },
+      {
+        "_path": "Library/lib/mpiexec.lib",
+        "path_type": "hardlink",
+        "sha256": "f53db3d08ab1ef04d0e645cd0454ac6e11d65df622ced580acfbbe2a310a6b59",
+        "sha256_in_prefix": "f53db3d08ab1ef04d0e645cd0454ac6e11d65df622ced580acfbbe2a310a6b59",
+        "size_in_bytes": 2772
+      },
+      {
+        "_path": "Library/lib/mpifort.lib",
+        "path_type": "hardlink",
+        "sha256": "31629248de917d4ed43f6b117f41c51d9909e8eecf66b6b47bdb95c776568108",
+        "sha256_in_prefix": "31629248de917d4ed43f6b117f41c51d9909e8eecf66b6b47bdb95c776568108",
+        "size_in_bytes": 738896
+      },
+      {
+        "_path": "Library/lib/mpiio.lib",
+        "path_type": "hardlink",
+        "sha256": "98b22c8ccf78665b5e8d1a521c509c16d4ef8d2344fc50c1857e8ea6ea44750c",
+        "sha256_in_prefix": "98b22c8ccf78665b5e8d1a521c509c16d4ef8d2344fc50c1857e8ea6ea44750c",
+        "size_in_bytes": 2963286
+      },
+      {
+        "_path": "Library/lib/mpistub.lib",
+        "path_type": "hardlink",
+        "sha256": "27dae7c937d9f1c2bcd59dab1b6b964ce4f3bbbbd7b5904e2af5e08097512582",
+        "sha256_in_prefix": "27dae7c937d9f1c2bcd59dab1b6b964ce4f3bbbbd7b5904e2af5e08097512582",
+        "size_in_bytes": 623100
+      },
+      {
+        "_path": "Library/lib/mpiutil.lib",
+        "path_type": "hardlink",
+        "sha256": "2535c4af6dff562f7864eb98235ffb969d6dee202167b2cb7a2832a514213b97",
+        "sha256_in_prefix": "2535c4af6dff562f7864eb98235ffb969d6dee202167b2cb7a2832a514213b97",
+        "size_in_bytes": 10501016
+      },
+      {
+        "_path": "Library/lib/msmpi.lib",
+        "path_type": "hardlink",
+        "sha256": "5b3686a1509a644648de67f8a9ca73d3598df262a47e1292beeaf0022b0788b4",
+        "sha256_in_prefix": "5b3686a1509a644648de67f8a9ca73d3598df262a47e1292beeaf0022b0788b4",
+        "size_in_bytes": 319688
+      },
+      {
+        "_path": "Library/lib/msmpifec.lib",
+        "path_type": "hardlink",
+        "sha256": "90be857aad4f868a6a4c1a5f002b0f3f78ba6434ec437b9008ef45846c1be274",
+        "sha256_in_prefix": "90be857aad4f868a6a4c1a5f002b0f3f78ba6434ec437b9008ef45846c1be274",
+        "size_in_bytes": 870384
+      },
+      {
+        "_path": "Library/lib/msmpifes.lib",
+        "path_type": "hardlink",
+        "sha256": "4f5f5693496c4260847b5b6ac9ae4508dbd7b6fbb55ca10adf185f0f147264cd",
+        "sha256_in_prefix": "4f5f5693496c4260847b5b6ac9ae4508dbd7b6fbb55ca10adf185f0f147264cd",
+        "size_in_bytes": 870386
+      },
+      {
+        "_path": "Library/lib/msmpifmc.lib",
+        "path_type": "hardlink",
+        "sha256": "15ec6fc843391212a7ccb378c00774fe15c0f77184f57fcaf62ee9c5877f21e9",
+        "sha256_in_prefix": "15ec6fc843391212a7ccb378c00774fe15c0f77184f57fcaf62ee9c5877f21e9",
+        "size_in_bytes": 887440
+      },
+      {
+        "_path": "Library/lib/msmpifms.lib",
+        "path_type": "hardlink",
+        "sha256": "b377ca338d08e6e7e7535d0ac823867dff91723af60cd6f3e0e9737a5a4e4051",
+        "sha256_in_prefix": "b377ca338d08e6e7e7535d0ac823867dff91723af60cd6f3e0e9737a5a4e4051",
+        "size_in_bytes": 887446
+      },
+      {
+        "_path": "Library/lib/pmicli.lib",
+        "path_type": "hardlink",
+        "sha256": "bc9a563ba8c2ceb4098e000b63a572368e9bd0ac7c1220c2b6b5e68cd1bb5ce0",
+        "sha256_in_prefix": "bc9a563ba8c2ceb4098e000b63a572368e9bd0ac7c1220c2b6b5e68cd1bb5ce0",
+        "size_in_bytes": 2301556
+      },
+      {
+        "_path": "Library/lib/pmilib.lib",
+        "path_type": "hardlink",
+        "sha256": "3b85abae1bca38f1fb5ab4d4457011e97cc69575da0f08e6be08ee30e0abaac8",
+        "sha256_in_prefix": "3b85abae1bca38f1fb5ab4d4457011e97cc69575da0f08e6be08ee30e0abaac8",
+        "size_in_bytes": 7869872
+      },
+      {
+        "_path": "etc/conda/activate.d/msmpi_activate.bat",
+        "path_type": "hardlink",
+        "sha256": "5f79e47e1431224db8ef094d1d295b6a3848d25ed0382da31b53c61e7333ecfa",
+        "sha256_in_prefix": "5f79e47e1431224db8ef094d1d295b6a3848d25ed0382da31b53c61e7333ecfa",
+        "size_in_bytes": 1010
+      },
+      {
+        "_path": "etc/conda/deactivate.d/msmpi_deactivate.bat",
+        "path_type": "hardlink",
+        "sha256": "8c6fa4669deda6eab388c4fb4894c03a4104bc130578a4aaf0d23acd6a12b93b",
+        "sha256_in_prefix": "8c6fa4669deda6eab388c4fb4894c03a4104bc130578a4aaf0d23acd6a12b93b",
+        "size_in_bytes": 620
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "492bad412a51125cb94ed028904f7aa68a7e271e54af851ddc56062dc0e552a6",
+  "size": 4223559,
+  "subdir": "win-64",
+  "timestamp": 1671129857000,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/msmpi-10.1.1-had4844c_0.conda",
+  "version": "10.1.1"
+}
